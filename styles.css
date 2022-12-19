@@ -1,0 +1,124 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* Variables */
+:root {
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light_grey: hsl(217, 12%, 63%);
+  --neutral-medium_grey: hsl(216, 12%, 54%);
+  --neutral_dark_blue: hsl(213, 19%, 18%);
+  --neutral-very-dark_blue: hsl(216, 12%, 8%);
+  --container-bg: #1f2630;
+  --orange-main: hsl(25, 97%, 53%);
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: var(--neutral-very-dark_blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--neutral-white);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--neutral-light_grey);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  background-color: var(--container-bg);
+  padding: 1.5rem;
+  border-radius: 5%;
+}
+
+.rating__logo {
+  background-color: var(--neutral_dark_blue);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating__choose {
+  width: 100%;
+}
+
+.rating__form .form-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-button {
+  border-radius: 50%;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: var(--neutral_dark_blue);
+  border: 1px solid transparent;
+  height: 50px;
+  width: 50px;
+  color: var(--neutral-light_grey);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.rating-button:hover {
+  background-color: var(--orange-main);
+  color: var(--neutral-white);
+}
+
+.rating-button:focus {
+  background-color: var(--neutral-medium_grey);
+  color: var(--neutral-white);
+}
+
+.star-img {
+  height: 15px;
+  width: 15px;
+}
+
+.submit-button {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+  border-radius: 30px;
+  font-weight: 700;
+  background-color: var(--orange-main);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  color: var(--neutral-white);
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--neutral-white);
+  color: var(--orange-main);
+}
