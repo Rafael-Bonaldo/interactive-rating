@@ -46,7 +46,6 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  height: 400px;
   width: 400px;
   background-color: var(--container-bg);
   padding: 1.5rem;
